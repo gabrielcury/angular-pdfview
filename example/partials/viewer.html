@@ -1,0 +1,18 @@
+<nav ng-class="getNavStyle(scroll)">
+  <button ng-click="goPrevious()">< Anterior</span></button>
+  <button ng-click="goNext()">Próximo ></span></button>
+
+  <button ng-click="zoomIn()">Aumentar ++</span></button>
+  <button ng-click="zoomOut()">Diminuir --</span></button>
+
+  <!--button ng-click="rotate()">Girar</span></button-->
+
+  <span>Página: </span>
+  <input  style="width:20px;" type="text" min=1 ng-model="pageNum">
+  <span> / {{pageCount}}</span>
+
+</nav>
+
+<hr>
+
+<canvas id="pdf"></canvas>
